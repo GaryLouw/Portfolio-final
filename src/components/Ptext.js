@@ -13,7 +13,7 @@ line-height: 1.3em;
 
 export default function Ptext({ children }) {
   return (
-    <Pstyle>
+    <Pstyle className="para">
       <p>{children}</p>
     </Pstyle>
   );
