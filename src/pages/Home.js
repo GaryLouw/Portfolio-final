@@ -1,5 +1,6 @@
 import React from "react";
 import AboutSection from "../components/AboutSection";
+import ContactBanner from "../components/ContactBanner";
 import HeroSection from "../components/HeroSection";
 import ProjectSection from "../components/ProjectSection";
 import ServicesSection from "../components/ServicesSection";
@@ -13,6 +14,7 @@ export default function Home() {
       <ServicesSection />
       <ProjectSection />
       <TestimonialsSection />
+      <ContactBanner />
     </div>
   );
 }
