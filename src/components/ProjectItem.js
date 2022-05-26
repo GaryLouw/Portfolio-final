@@ -34,12 +34,20 @@ const ProjectItemStyles = styledComponents.div`
         height: 350px;
     }
 }
+.projectButton{
+  display: inline-block;
+  font-size: 1.8rem;
+  text-decoration: underline;
+  margin: 2rem 0;
+  color: royalblue;
+}
 `;
 
 export default function ProjectItem({
   img = ProjectImg,
   title = "Project Name",
   desc = "title title tile description",
+  link,
 }) {
   return (
     <ProjectItemStyles>
@@ -51,6 +59,16 @@ export default function ProjectItem({
           <h3 className="projectItem__title">{title}</h3>
         </Link>
         <p className="projectItem__descrip">{desc}</p>
+        {link && (
+          <a
+            className="projectButton"
+            href={link}
+            target="_blank"
+            rel="noreferrer"
+          >
+            Open Project
+          </a>
+        )}
       </div>
     </ProjectItemStyles>
   );
